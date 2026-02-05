@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Classic bookish font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f7f2; /* Soft paper-like background */
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+header img {
+    height: 40px; /* Adjust based on your logo SVG size */
+}
+
+nav a {
+    text-decoration: none;
+    color: #357ABD;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4A90E2;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Cards Layout */
+section h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 5% 60px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin: 15px 0;
+    border-radius: 4px;
+    background: #eee; /* Placeholder color if image fails */
+}
+
+.card h4 {
+    color: #357ABD;
+    font-size: 1.4rem;
+}
+
+/* Footer & Social Icons */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: auto;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Makes the black SVGs white */
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <path d="M20 15c0-2.761 2.239-5 5-5h20v30H25c-2.761 0-5 2.239-5 5V15z" fill="#4A90E2"/>
+  <path d="M45 10h20c2.761 0 5 2.239 5 5v30c0-2.761-2.239-5-5-5H45V10z" fill="#357ABD"/>
+  <path d="M25 45h40" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+  
+  <text x="80" y="40" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#333">
+    Bookish
+  </text>
+</svg>

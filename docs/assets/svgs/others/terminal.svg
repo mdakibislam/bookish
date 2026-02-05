@@ -1,0 +1,46 @@
+<svg width="600" height="300" viewBox="0 0 600 300"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect x="0" y="0" width="600" height="300" rx="12" fill="#0b0f14"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="600" height="36" rx="12" fill="#151a21"/>
+  <circle cx="20" cy="18" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="18" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="18" r="6" fill="#27c93f"/>
+
+  <!-- Terminal text -->
+  <g font-family="monospace" font-size="16" fill="#00ff9c">
+    <text x="24" y="80">
+      <tspan>$ </tspan>
+      <tspan>
+        echo "Hello, World"
+        <animate attributeName="opacity"
+                 from="0" to="1"
+                 dur="2s"
+                 fill="freeze"/>
+      </tspan>
+    </text>
+
+    <text x="24" y="120">
+      <tspan>
+        Hello, World
+        <animate attributeName="opacity"
+                 from="0" to="1"
+                 begin="2s"
+                 dur="1s"
+                 fill="freeze"/>
+      </tspan>
+    </text>
+  </g>
+
+  <!-- Blinking cursor -->
+  <rect x="185" y="104" width="10" height="18" fill="#00ff9c">
+    <animate attributeName="opacity"
+             values="1;0;1"
+             dur="1s"
+             repeatCount="indefinite"/>
+  </rect>
+
+</svg>
